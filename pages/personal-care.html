@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinderhealthcare - Trusted Home Care Services in the UK</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link rel="icon" type="image/x-icon" href="/Brand Design_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/personalcare.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="font-body text-primary bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-25">
+                <!-- Logo -->
+
+                    <div class="flex items-center">
+                        <a href="/index.html"
+                            class="flex items-center transform hover:scale-105 transition-all duration-300">
+                            <img src="/brand-logo.png" alt="Cinderhealthcare Logo"
+                                class="h-20 w-auto">
+                        </a>
+                    </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="font-medium hover:text-accent transition-colors duration-300">Home</a>
+                    <a href="/pages/about.html" class="font-medium hover:text-accent transition-colors duration-300">About Us</a>
+                    <div class="relative group">
+                        <button class="font-medium hover:text-accent transition-colors duration-300 flex items-center">
+                            What We Do
+                            <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20">
+                            <div class="py-2">
+                                <a href="/pages/personal-care.html" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-accent">Personal Care</a>
+                                <a href="/pages/home-support.html" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-accent">Home Support</a>
+                                <a href="/pages/companionship.html" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-accent">Companionship & Respite Care</a>
+                                <a href="/pages/complex.html" class="block px-4 py-2 text-sm hover:bg-gray-50 hover:text-accent">Specialist & Complex Care</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/pages/our-team.html" class="font-medium hover:text-accent transition-colors duration-300">Join Our Team</a>
+                </div>
+                
+                <!-- Contact Button & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <a href="/pages/contact.html" class="hidden sm:block bg-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-red-600 transition-colors duration-300 cta-button">Contact Us</a>
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-primary focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="/index.html.html" class="block px-3 py-2 text-base font-medium hover:text-accent">Home</a>
+                    <a href="/pages/about.html" class="block px-3 py-2 text-base font-medium hover:text-accent">About Us</a>
+                    <div class="px-3 py-2">
+                        <p class="text-sm font-semibold text-gray-600 mb-2">What We Do</p>
+                        <a href="/pages/personal-care.html" class="block px-3 py-1 text-sm hover:text-accent">Personal Care</a>
+                        <a href="/pages/home-support.html" class="block px-3 py-1 text-sm hover:text-accent">Home Support</a>
+                        <a href="/pages/companionship.html" class="block px-3 py-1 text-sm hover:text-accent">Companionship & Respite Care</a>
+                        <a href="/pages/complex.html" class="block px-3 py-1 text-sm hover:text-accent">Specialist & Complex Care</a>
+                    </div>
+                    <a href="/pages/our-team.html" class="block px-3 py-2 text-base font-medium hover:text-accent">Join Our Team</a>
+                    <a href="/pages/contact.html" class="block px-3 py-2 text-base font-medium text-accent">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+<!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden fade-in">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/images/personalhero.png" 
+                 alt="Caring hands supporting elderly person" 
+                 class="w-full h-full object-cover scale-105">
+        </div>
+        
+        <!-- Primary color overlay -->
+        <div class="absolute inset-0 bg-primary mix-blend-multiply z-10"></div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-accent opacity-20 rounded-full blur-3xl z-20"></div>
+        <div class="absolute bottom-32 right-16 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl z-20"></div>
+        <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-accent opacity-15 rounded-full blur-xl z-20"></div>
+        
+        <!-- Content -->
+        <div class="relative z-30 max-w-6xl mx-auto px-4 text-center slide-up">
+            <div class="mb-2">
+
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 leading-tight">
+                    Personal Care Services
+
+                </h1>
+            </div>
+            
+            <p class="text-xl md:text-2xl text-gray-100 mb-4 font-light leading-relaxed max-w-4xl mx-auto">
+                Compassionate support that helps you maintain your independence while preserving your dignity. Our experienced carers provide discreet, respectful assistance tailored to your unique needs and daily routines.
+            </p>
+            
+        
+        </div>
+        
+       
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center slide-up">
+            <h2 class="font-heading text-3xl font-bold text-primary mb-6">
+                Your Comfort and Independence Come First
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-2">
+                At Cinderhealthcare, we understand that receiving personal care can feel overwhelming. That's why our approach focuses on building trust, respecting your preferences, and empowering you to live life on your own terms. Our trained professionals work alongside you, not for you, ensuring every interaction feels natural and supportive.
+            </p>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading text-3xl font-bold text-center text-primary mb-16 slide-up">
+                Comprehensive Personal Care Support
+            </h2>
+            
+            <!-- Daily Hygiene & Grooming -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="slide-up">
+                    <img src="/assets/images/personalcare1.png" 
+                         alt="Personal hygiene and grooming assistance" 
+                         class="rounded-2xl shadow-xl w-full h-80 object-cover hover-lift">
+                </div>
+                <div class="slide-up">
+
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">
+                        Daily Hygiene & Grooming
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Starting each day feeling fresh and confident makes all the difference. Our carers provide gentle, respectful assistance with washing, bathing, showering, and dressing. We support your mobility during these routines and help with the small details that matter most to you.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Assistance with bathing and showering safety</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Help with dressing and clothing selection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Personal grooming and skincare support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Maintaining personal appearance preferences</span>
+                        </li>
+                    </ul>
+              
+                </div>
+            </div>
+
+            <!-- Medication Support -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="lg:order-2 slide-up">
+                    <img src="/assets/images/personalcare2.png" 
+                         alt="Medication management and support" 
+                         class="rounded-2xl shadow-xl w-full h-80 object-cover hover-lift">
+                </div>
+                <div class="lg:order-1 slide-up">
+
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">
+                        Medication Support & Management
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Taking the right medication at the right time is essential for your health and peace of mind. Our trained carers provide gentle reminders, safe administration assistance, and help coordinate with your pharmacy to ensure you never miss a dose or face confusion about your medications.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Gentle medication reminders and scheduling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Safe administration and monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Prescription collection and pharmacy coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Medication organization and tracking</span>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+
+            <!-- Nutrition & Meal Preparation -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="slide-up">
+                    <img src="/assets/images/personalcare3.png" 
+                         alt="Nutritious meal preparation and cooking" 
+                         class="rounded-2xl shadow-xl w-full h-80 object-cover hover-lift">
+                </div>
+                <div class="slide-up">
+
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">
+                        Nutrition & Meal Preparation
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Good nutrition is the foundation of wellbeing, and every meal should be both nourishing and enjoyable. Our carers support you with meal planning, grocery shopping, and cooking, always considering your dietary preferences, health requirements, and cultural traditions. Sometimes, the greatest gift is simply sharing a meal with someone who cares.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Personalized meal planning and preparation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Grocery shopping and ingredient selection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Special dietary requirements and restrictions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-accent mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Companionship during meals and hydration support</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="py-16 px-4 bg-primary">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading text-3xl font-bold text-center text-white mb-16 slide-up">
+                Additional Personal Care Support
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mobility Assistance -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover-lift slide-up">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-purple-100 rounded-full mb-6">
+                        <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">Mobility & Transfer Support</h3>
+                    <p class="text-gray-700 mb-6">Safe assistance with moving around your home, transferring from bed to chair, and maintaining your preferred level of physical activity.</p>
+
+                </div>
+
+                <!-- Continence Care -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover-lift slide-up">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-teal-100 rounded-full mb-6">
+                        <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">Continence Care</h3>
+                    <p class="text-gray-700 mb-6">Dignified, discreet support with continence management, maintaining comfort and confidence in your daily routine.</p>
+
+                </div>
+
+                <!-- Sleep & Rest -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover-lift slide-up">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-indigo-100 rounded-full mb-6">
+                        <svg class="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">Sleep & Rest Support</h3>
+                    <p class="text-gray-700 mb-6">Creating comfortable sleeping environments and providing nighttime assistance to ensure you get the restful sleep you deserve.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 slide-up">
+                <h2 class="font-heading text-4xl font-bold text-primary mb-6">
+                    Why Families Choose Cinderhealthcare
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                    Our personal care services are built on trust, respect, and a deep understanding of what it means to age with dignity. Here's what makes us different.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center slide-up">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a1.5 1.5 0 01-3 0 1.5 1.5 0 013 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Trained Professionals</h3>
+                    <p class="text-gray-700">Our carers receive comprehensive training in personal care techniques, dignity preservation, and compassionate support.</p>
+                </div>
+
+                <div class="text-center slide-up">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Safety & Security</h3>
+                    <p class="text-gray-700">Fully insured and background-checked professionals who prioritize your safety while respecting your independence.</p>
+                </div>
+
+                <div class="text-center slide-up">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Flexible Scheduling</h3>
+                    <p class="text-gray-700">Care that adapts to your routine and preferences, available when you need it most - daily, weekly, or as required.</p>
+                </div>
+
+                <div class="text-center slide-up">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-purple-100 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Person-Centered Care</h3>
+                    <p class="text-gray-700">Every care plan is tailored to your unique needs, preferences, and goals, ensuring you remain in control of your life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 px-4 bg-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 slide-up">
+                <h2 class="font-heading text-4xl font-bold text-primary mb-6">
+                    How We Begin Your Care Journey
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                    Starting personal care support can feel daunting. Our gentle, step-by-step approach ensures you feel comfortable and confident every step of the way.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="text-center slide-up">
+                    <div class="relative">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-accent text-white rounded-full mb-6 text-2xl font-bold">1</div>
+                        <div class="hidden lg:block absolute top-8 left-16 w-full h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Initial Consultation</h3>
+                    <p class="text-gray-700">We meet with you and your family to understand your needs, preferences, and concerns in the comfort of your own home.</p>
+                </div>
+
+                <div class="text-center slide-up">
+                    <div class="relative">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-accent text-white rounded-full mb-6 text-2xl font-bold">2</div>
+                        <div class="hidden lg:block absolute top-8 left-16 w-full h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Personalized Care Plan</h3>
+                    <p class="text-gray-700">Together, we create a detailed care plan that respects your independence while providing the support you need.</p>
+                </div>
+
+                <div class="text-center slide-up">
+                    <div class="relative">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-accent text-white rounded-full mb-6 text-2xl font-bold">3</div>
+                        <div class="hidden lg:block absolute top-8 left-16 w-full h-0.5 bg-gray-300"></div>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Meet Your Carer</h3>
+                    <p class="text-gray-700">We introduce you to your dedicated carer, ensuring compatibility and building trust before care begins.</p>
+                </div>
+
+                <div class="text-center slide-up">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-accent text-white rounded-full mb-6 text-2xl font-bold">4</div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Start Your Care</h3>
+                    <p class="text-gray-700">Your carer begins providing support according to your schedule, with ongoing communication and adjustments as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Call to Action Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#1c2527] fade-in">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-heading text-4xl font-bold text-white mb-6">
+              Join our Team
+            </h2>
+            <p class="font-body text-xl text-gray-200 mb-8 leading-relaxed">
+             Make a difference in people's lives. We're looking for compassionate carers who +share our values of respect, trust, and excellence.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <a href="/pages/our-team.html">
+                    <button class="bg-accent hover:bg-red-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg pulse-accent">
+                        Join Our Team
+                    </button>
+                </a>
+                <a href="mailto:info@cinderhealthcare.co.uk" target="_blank">
+                    <button class="bg-accent hover:bg-red-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg pulse-accent">
+                        Schedule Free Consultation
+                    </button>
+                </a>
+           
+            </div>
+            
+     
+        </div>
+    </section>
+     <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-heading text-xl font-bold mb-4">Cinderhealthcare</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Trusted home care services across the UK, helping people live independently with dignity and comfort.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/pages/personal-care.html" class="text-gray-300 hover:text-white transition-colors duration-300">Personal Care</a></li>
+                        <li><a href="/pages/home-support.html" class="text-gray-300 hover:text-white transition-colors duration-300">Home Support</a></li>
+                        <li><a href="/pages/companionship.html" class="text-gray-300 hover:text-white transition-colors duration-300">Companionship</a></li>
+                        <li><a href="/pages/complex.html" class="text-gray-300 hover:text-white transition-colors duration-300">Specialist Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/pages/about.html" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="/pages/our-team.html" class="text-gray-300 hover:text-white transition-colors duration-300">Join Our Team</a></li>
+                        <li><a href="/pages/contact.html" class="text-gray-300 hover:text-white transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+                    <div class="text-gray-300 space-y-2">
+                        <p>Available 24/7 for emergencies</p>
+                        <p>Serving across the UK</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2025 Cinderhealthcare. All rights reserved. Providing compassionate care across the UK.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.remove('open');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animation classes
+        document.querySelectorAll('.opacity-0').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+                this.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.backgroundColor = 'white';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+       
+
+        // Focus management for mobile menu
+        mobileMenuBtn.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                mobileMenu.classList.toggle('open');
+            }
+        });
+    </script>
+    <script src="/scripts/personal care.js"></script>
+</body>
+</html>

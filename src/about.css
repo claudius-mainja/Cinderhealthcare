@@ -1,0 +1,36 @@
+  .fade-in-up {
+            opacity: 1;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-animation {
+            animation-delay: calc(var(--stagger-delay, 0) * 150ms);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .pulse-gentle {
+            animation: pulse-gentle 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-gentle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(55, 69, 72, 0.8), rgba(226, 76, 43, 0.1));
+        }
