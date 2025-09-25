@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
       <link rel="icon" type="image/x-icon" href="/Brand Design_icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/companion.css">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="font-body text-primary bg-white">
@@ -80,116 +81,298 @@
 
     <!-- Main Content -->
 
- <!-- Hero Section -->
-   <section class="relative min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #374548 2px, transparent 0); background-size: 40px 40px;"></div>
+<!-- Hero Section -->
+    <section class="relative max-h-screen flex items-center justify-center overflow-hidden fade-in py-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/images/homesupporthero.png" 
+                 alt="Caring hands supporting elderly person" 
+                 class="w-full h-full object-cover scale-105">
         </div>
         
-        <!-- Background Shapes -->
-        <div class="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 right-20 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-accent/5 rounded-full blur-2xl"></div>
+        <!-- Primary color overlay -->
+        <div class="absolute inset-0 bg-primary mix-blend-multiply z-10"></div>
         
-        <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
-                <!-- Content Side -->
-                <div class="opacity-0 animate-fade-in-up">
-                    <div class="max-w-2xl">
-                        <!-- Badge -->
-                        <div class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full text-sm font-medium text-primary mb-6 shadow-sm">
-                            <span class="w-2 h-2 bg-accent rounded-full mr-2"></span>
-                            Trusted Healthcare Provider
+        <!-- Decorative elements -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-accent opacity-20 rounded-full blur-3xl z-20"></div>
+        <div class="absolute bottom-32 right-16 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl z-20"></div>
+        <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-accent opacity-15 rounded-full blur-xl z-20"></div>
+        
+        <!-- Content -->
+        <div class="relative z-30 max-w-6xl mx-auto px-4 text-center slide-up">
+            <div class="mb-2">
+
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 leading-tight">
+               Companionship & Respite Care
+
+                </h1>
+            </div>
+            
+            <p class="text-xl md:text-2xl text-gray-100 mb-4 font-light leading-relaxed max-w-4xl mx-auto">
+    Because wellbeing extends far beyond physical health, we believe in nurturing the heart and spirit through meaningful connections and compassionate support
+            </p>
+            
+        
+        </div>
+        
+    </section>
+
+      <section class="py-20 px-4 max-w-7xl mx-auto">
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="font-heading text-2xl md:text-3xl font-bold text-primary mb-6">
+                    More Than Care – It's Human Connection
+                </h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Loneliness doesn't just affect the heart; it impacts overall health and quality of life. Our companionship and respite services are thoughtfully designed to create genuine human connections that uplift spirits, provide emotional support, and strengthen the bonds that matter most.
+                </p>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Whether you're seeking meaningful companionship for yourself or a well-deserved break as a family caregiver, we're here to provide the warmth, understanding, and professional support that makes every day brighter.
+                </p>
+                <a href="mailto:info@cinderhealthcare.co.uk" target="_blank" class="inline-block mb-4 text-accent hover:underline">
+                <button class="bg-accent hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale">
+                    Learn More About Our Services
+                </button>
+                </a>
+            </div>
+            <div>
+                <img src="/assets/images/Companionship1.png" 
+                     alt="Elderly person and caregiver sharing a warm moment over tea" 
+                     class="rounded-2xl shadow-lg hover-scale w-full h-96 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
+                Our Companionship Services
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Every service is delivered with genuine care, professional expertise, and a deep understanding of what it means to truly connect with others.
+            </p>
+        </div>
+
+        <!-- Meaningful Companionship -->
+        <div class="mb-20 fade-in">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="flex items-center mb-6">
+                        <div class="w-3 h-16 bg-accent rounded-full mr-6 pulse-gentle"></div>
+                        <h3 class="font-heading text-3xl md:text-4xl font-bold text-primary">
+                            Meaningful Companionship
+                        </h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        True companionship goes beyond simply being present – it's about creating moments of joy, sharing stories, and building relationships that bring warmth to everyday life. Our compassionate carers understand that each person is unique, with their own interests, memories, and preferences.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                            <h4 class="font-semibold text-primary mb-3">Conversation & Storytelling</h4>
+                            <p class="text-gray-600">Engaging discussions about life experiences, current events, or favorite memories</p>
                         </div>
-                        
-                        <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-8 leading-tight">
-                            About 
-                            <span class="text-accent relative">
-                                Cinderhealthcare
-                                <div class="absolute -bottom-2 left-0 w-full h-1 bg-accent/30 rounded-full"></div>
-                            </span>
-                        </h1>
-                        
-                        <p class="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed font-light">
-                            A trusted healthcare and support provider dedicated to helping individuals live safely, comfortably, and independently in their own homes.
-                        </p>
-                        
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="/pages/services.html" class="group bg-accent hover:bg-red-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center">
-                                Learn About Our Services
-                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                </svg>
-                            </a>
-                            <a href="/pages/contact.html" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 flex items-center justify-center backdrop-blur-sm bg-white/50">
-                                Contact Us Today
-                            </a>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                            <h4 class="font-semibold text-primary mb-3">Games & Activities</h4>
+                            <p class="text-gray-600">Card games, puzzles, crafts, or any hobby that brings joy and mental stimulation</p>
                         </div>
-                        
-                        <!-- Stats -->
-                        <div class="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-200">
-                            <div class="text-center">
-                                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">500+</div>
-                                <div class="text-sm text-gray-500 font-medium">Families Served</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">24/7</div>
-                                <div class="text-sm text-gray-500 font-medium">Care Support</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">100+</div>
-                                <div class="text-sm text-gray-500 font-medium">Customer Satisfied</div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                            <h4 class="font-semibold text-primary mb-3">Shared Meals & Tea</h4>
+                            <p class="text-gray-600">Simple pleasures like sharing a meal or enjoying afternoon tea together</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                            <h4 class="font-semibold text-primary mb-3">Emotional Support</h4>
+                            <p class="text-gray-600">A listening ear, gentle encouragement, and genuine understanding during difficult times</p>
+                        </div>
+                    </div>
+                    <a href="mailto:info@cinderhealthcare.co.uk" target="_blank" class="inline-block mb-4 text-accent hover:underline">
+                    <button class="bg-primary hover:bg-gray-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale">
+                        Discover Companionship Options
+                    </button>
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2 space-y-6">
+                    <img src="/assets/images/compNION2.png" 
+                         alt="Elderly person and caregiver playing cards together" 
+                         class="rounded-2xl shadow-lg hover-scale w-full h-64 object-cover float">
+                    <img src="/assets/images/compNION3.png" 
+                         alt="Caregiver reading with elderly client" 
+                         class="rounded-2xl shadow-lg hover-scale w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Outings -->
+        <div class="mb-20 fade-in">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <img src="/assets/images/compNION4.png" 
+                         alt="Caregiver assisting elderly person on a walk in the park" 
+                         class="rounded-2xl shadow-lg hover-scale w-full h-64 object-cover">
+                    <img src="/assets/images/compNION5.png" 
+                         alt="Caregiver accompanying elderly person to medical appointment" 
+                         class="rounded-2xl shadow-lg hover-scale w-full h-64 object-cover float">
+                </div>
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-3 h-16 bg-accent rounded-full mr-6 pulse-gentle"></div>
+                        <h3 class="font-heading text-2xl md:text-3xl font-bold text-primary">
+                            Community Outings & Appointments
+                        </h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Staying connected to your community shouldn't become a challenge. Our carers provide reliable, compassionate accompaniment to help you maintain an active, engaged lifestyle while ensuring your safety and comfort every step of the way.
+                    </p>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-accent rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-2">Medical Appointments</h4>
+                                <p class="text-gray-600">Professional accompaniment to doctor visits, therapy sessions, or specialist appointments with note-taking support</p>
                             </div>
                         </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-accent rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold text-sm">2</div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-2">Social Activities</h4>
+                                <p class="text-gray-600">Attend community centers, social clubs, religious services, or cultural events with confidence</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-accent rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold text-sm">3</div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-2">Recreational Outings</h4>
+                                <p class="text-gray-600">Enjoy parks, museums, shopping centers, or simply take peaceful walks in nature</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-accent rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold text-sm">4</div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-2">Essential Errands</h4>
+                                <p class="text-gray-600">Grocery shopping, pharmacy visits, banking, or other important tasks with caring assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="mailto:info@cinderhealthcare.co.uk" target="_blank" class="inline-block mb-4 text-accent hover:underline">
+                    <button class="bg-accent hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale">
+                        Schedule Community Support
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Respite -->
+        <div class="fade-in">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="flex items-center mb-6">
+                        <div class="w-3 h-16 bg-accent rounded-full mr-6 pulse-gentle"></div>
+                        <h3 class="font-heading text-3xl md:text-4xl font-bold text-primary">
+                            Family Respite Care
+                        </h3>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Caring for a loved one is one of life's most meaningful experiences, but it can also be physically and emotionally demanding. You deserve support, rest, and the peace of mind that comes from knowing your loved one is in capable, caring hands.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Our respite services are designed to give family caregivers the opportunity to recharge while ensuring their loved one receives the same level of attention, companionship, and care they would provide themselves.
+                    </p>
+                    
+                    <div class="bg-gray-100 p-8 rounded-2xl mb-8">
+                        <h4 class="font-heading text-2xl font-bold text-primary mb-6">What Respite Care Includes:</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-gray-700">Personal companionship and conversation</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-gray-700">Light meal preparation and assistance</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-gray-700">Medication reminders</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-gray-700">Safety monitoring and assistance</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-gray-700">Engaging activities and entertainment</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-gray-700">Regular updates and communication</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="mailto:info@cinderhealthcare.co.uk" target="_blank" class="inline-block mb-4 text-accent hover:underline">
+                        <button class="bg-accent hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale flex-1">
+                            Get Respite Support
+                        </button>
+                        </a>
+                        <a href="mailto:info@cinderhealthcare.co.uk" target="_blank" class="inline-block mb-4 text-accent hover:underline">
+                        <button class="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale flex-1">
+                            Schedule a Consultation
+                        </button>
+                        </a>
                     </div>
                 </div>
+                <div class="order-1 lg:order-2">
+                    <img src="/assets/images/compNIOn6.png" 
+                         alt="Family caregiver taking a peaceful moment while professional carer is with elderly relative" 
+                         class="rounded-2xl shadow-lg hover-scale w-full h-full object-cover float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
+                    Why Families Choose Cinderhealthcare
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our approach to companionship and respite care is built on genuine human connection, professional excellence, and a deep understanding of what truly matters.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center fade-in hover-scale">
+                  
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">Compassionate Care</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every interaction is guided by genuine empathy, respect, and a commitment to treating each person with the dignity they deserve.
+                    </p>
+                </div>
                 
-                <!-- Image Side -->
-                <div class="opacity-0 animate-fade-in-up animation-delay-300 lg:justify-self-end">
-                    <div class="relative max-w-lg mx-auto">
-                        <!-- Background Elements -->
-                        <div class="absolute -top-4 -right-4 w-full h-full bg-accent/10 rounded-3xl transform rotate-3"></div>
-                        <div class="absolute -bottom-4 -left-4 w-full h-full bg-primary/10 rounded-3xl transform -rotate-2"></div>
-                        
-                        <!-- Main Image Container -->
-                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl backdrop-blur-sm">
-                            <img src="/assets/images/abouthero.png" alt="Caring healthcare professional" class="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover rounded-2xl">
-                            
-                            <!-- Gradient Overlay -->
-                            <div class="absolute inset-3 bg-gradient-to-t from-primary/50 via-primary/10 to-transparent rounded-2xl"></div>
-                            
-                            <!-- Floating Card -->
-                            <div class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-gray-100 max-w-xs">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-primary text-sm">Compassionate Care</div>
-                                        <div class="text-xs text-gray-500">Professional & Personal</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center fade-in hover-scale">
+                  
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">Professional Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our carers are thoroughly trained, background-checked, and committed to maintaining the highest standards of professional care.
+                    </p>
+                </div>
+                
+                <div class="text-center fade-in hover-scale">
+                    
+                    <h3 class="font-heading text-2xl font-bold text-primary mb-4">Family-Centered Approach</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We understand that care extends to the entire family, providing support and peace of mind for everyone involved.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
-
-
-
-    
      <!-- Call to Action Section -->
     <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#1c2527] fade-in">
         <div class="max-w-4xl mx-auto text-center">
@@ -353,5 +536,6 @@
             }
         });
     </script>
+    <script src="/scripts/companion.js"></script>
 </body>
 </html>

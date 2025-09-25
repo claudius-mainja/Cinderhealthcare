@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
       <link rel="icon" type="image/x-icon" href="/Brand Design_icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/homecare.css">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="font-body text-primary bg-white">
@@ -79,143 +80,294 @@
     </nav>
 
     <!-- Main Content -->
- <!-- Hero Section -->
-   <section class="relative min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100 overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #374548 2px, transparent 0); background-size: 40px 40px;"></div>
+<!-- Hero Section -->
+    <section class="relative max-h-screen flex items-center justify-center overflow-hidden fade-in py-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/images/homesupporthero.png" 
+                 alt="Caring hands supporting elderly person" 
+                 class="w-full h-full object-cover scale-105">
         </div>
         
-        <!-- Background Shapes -->
-        <div class="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 right-20 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-accent/5 rounded-full blur-2xl"></div>
+        <!-- Primary color overlay -->
+        <div class="absolute inset-0 bg-primary mix-blend-multiply z-10"></div>
         
-        <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
-                <!-- Content Side -->
-                <div class="opacity-0 animate-fade-in-up">
-                    <div class="max-w-2xl">
-                        <!-- Badge -->
-                        <div class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full text-sm font-medium text-primary mb-6 shadow-sm">
-                            <span class="w-2 h-2 bg-accent rounded-full mr-2"></span>
-                            Trusted Healthcare Provider
-                        </div>
-                        
-                        <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-8 leading-tight">
-                            About 
-                            <span class="text-accent relative">
-                                Cinderhealthcare
-                                <div class="absolute -bottom-2 left-0 w-full h-1 bg-accent/30 rounded-full"></div>
-                            </span>
-                        </h1>
-                        
-                        <p class="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed font-light">
-                            A trusted healthcare and support provider dedicated to helping individuals live safely, comfortably, and independently in their own homes.
-                        </p>
-                        
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="/pages/services.html" class="group bg-accent hover:bg-red-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center">
-                                Learn About Our Services
-                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                </svg>
-                            </a>
-                            <a href="/pages/contact.html" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 flex items-center justify-center backdrop-blur-sm bg-white/50">
-                                Contact Us Today
-                            </a>
-                        </div>
-                        
-                        <!-- Stats -->
-                        <div class="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-200">
-                            <div class="text-center">
-                                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">500+</div>
-                                <div class="text-sm text-gray-500 font-medium">Families Served</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">24/7</div>
-                                <div class="text-sm text-gray-500 font-medium">Care Support</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">100+</div>
-                                <div class="text-sm text-gray-500 font-medium">Customer Satisfied</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Image Side -->
-                <div class="opacity-0 animate-fade-in-up animation-delay-300 lg:justify-self-end">
-                    <div class="relative max-w-lg mx-auto">
-                        <!-- Background Elements -->
-                        <div class="absolute -top-4 -right-4 w-full h-full bg-accent/10 rounded-3xl transform rotate-3"></div>
-                        <div class="absolute -bottom-4 -left-4 w-full h-full bg-primary/10 rounded-3xl transform -rotate-2"></div>
-                        
-                        <!-- Main Image Container -->
-                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl backdrop-blur-sm">
-                            <img src="/assets/images/abouthero.png" alt="Caring healthcare professional" class="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover rounded-2xl">
-                            
-                            <!-- Gradient Overlay -->
-                            <div class="absolute inset-3 bg-gradient-to-t from-primary/50 via-primary/10 to-transparent rounded-2xl"></div>
-                            
-                            <!-- Floating Card -->
-                            <div class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-gray-100 max-w-xs">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-primary text-sm">Compassionate Care</div>
-                                        <div class="text-xs text-gray-500">Professional & Personal</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Decorative elements -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-accent opacity-20 rounded-full blur-3xl z-20"></div>
+        <div class="absolute bottom-32 right-16 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl z-20"></div>
+        <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-accent opacity-15 rounded-full blur-xl z-20"></div>
+        
+        <!-- Content -->
+        <div class="relative z-30 max-w-6xl mx-auto px-4 text-center slide-up">
+            <div class="mb-2">
+
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 leading-tight">
+               Home Support Services
+
+                </h1>
             </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-    
-     <!-- Call to Action Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#1c2527] fade-in">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-heading text-4xl font-bold text-white mb-6">
-              Join our Team
-            </h2>
-            <p class="font-body text-xl text-gray-200 mb-8 leading-relaxed">
-             Make a difference in people's lives. We're looking for compassionate carers who share our values of respect, trust, and excellence.
+            
+            <p class="text-xl md:text-2xl text-gray-100 mb-4 font-light leading-relaxed max-w-4xl mx-auto">
+          Creating comfortable, safe, and welcoming living spaces where you can thrive with confidence and independence
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <a href="/pages/our-team.html">
-                    <button class="bg-accent hover:bg-red-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg pulse-accent">
-                        Join Our Team
-                    </button>
-                </a>
-                <a href="mailto:info@cinderhealthcare.co.uk" target="_blank">
-                    <button class="bg-accent hover:bg-red-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg pulse-accent">
-                        Schedule Free Consultation
-                    </button>
-                </a>
-           
+        
+        </div>
+        
+    </section>
+
+      <!-- Introduction Section -->
+    <section class="py-16 px-4 gradient-overlay">
+        <div class="max-w-6xl mx-auto">
+          
+            <div class="grid lg:grid-cols-2 gap-12 items-center animate-slide-up delay-200">
+                <div class="space-y-6">
+                    <h2 class="font-heading text-3xl md:text-4xl font-semibold text-primary">
+                        Your Home, Your Haven
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        A tidy, safe, and well-maintained home promotes both physical and emotional wellbeing. Our comprehensive home support services ensure you feel comfortable and secure in your living environment, allowing you to focus on what matters most to you.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        We understand that maintaining a home can become challenging, especially as we age or face health concerns. That's why our caring team is here to provide reliable, professional support that respects your independence while ensuring your living space remains a source of pride and comfort.
+                    </p>
+                
+                </div>
+                <div class="animate-float">
+                    <img src="/assets/images/home1.png" 
+                         alt="Comfortable and clean living room" 
+                         class="w-full h-full object-cover rounded-2xl shadow-2xl">
+                </div>
             </div>
-            
-     
         </div>
     </section>
-     <!-- Footer -->
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-heading text-2xl md:text-3xl font-bold mb-2 text-primary">
+                Home Support Services
+                </h2>
+                <p class="text-lg max-w-3xl mx-auto leading-tight">
+                    Our thoughtfully designed services cover every aspect of home maintenance and daily living support
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Housekeeping Service -->
+                <div class="service-card p-8 rounded-2xl hover-lift animate-slide-up delay-100">
+                    <div class="mb-6">
+                        <img src="/assets/images/professional home cleaning service.png" 
+                             alt="Professional housekeeping service" 
+                             class="w-full h-48 object-cover rounded-xl">
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 4l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-semibold text-primary">
+                            Professional Housekeeping
+                        </h3>
+                    </div>
+                    <p class="text-base leading-relaxed mb-6">
+                        We take care of all household chores including dusting, vacuuming, laundry, dishwashing, and comprehensive cleaning. This allows you to live in a spotless, welcoming environment without the physical strain of daily upkeep.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Deep cleaning and surface maintenance
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Laundry and clothing care
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Kitchen and bathroom sanitization
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Organization and tidying
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Shopping & Errands Service -->
+                <div class="service-card p-8 rounded-2xl hover-lift animate-slide-up delay-200">
+                    <div class="mb-6">
+                        <img src="/assets/images/Shopping & Errands.png" 
+                             alt="Shopping assistance and errands service" 
+                             class="w-full h-48 object-cover rounded-xl">
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-semibold text-primary">
+                            Shopping & Errands
+                        </h3>
+                    </div>
+                    <p class="text-base leading-relaxed mb-6">
+                        Our caring staff can accompany you to shops or complete errands on your behalf. This includes grocery shopping, paying bills, collecting prescriptions, and handling essential appointments. Every task is completed with reliability and genuine care.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Grocery shopping and meal planning
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Prescription collection and pharmacy visits
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Bill payments and banking assistance
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Appointment bookings and coordination
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Check-In Visits Service -->
+                <div class="service-card p-8 rounded-2xl hover-lift animate-slide-up delay-300">
+                    <div class="mb-6">
+                        <img src="/assets/images/Check-In Visits.png" 
+                             alt="Friendly check-in visits and companionship" 
+                             class="w-full h-48 object-cover rounded-xl">
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-semibold text-primary">
+                            Check-In Visits
+                        </h3>
+                    </div>
+                    <p class="text-base leading-relaxed mb-6">
+                        For those who live independently but benefit from regular reassurance, our carers offer scheduled visits. These visits include wellbeing checks, medication reminders, light assistance, and most importantly, friendly conversation that brightens your day.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Daily or weekly wellbeing assessments
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Medication reminders and monitoring
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Light assistance with daily activities
+                        </li>
+                        <li class="flex items-center text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Companionship and social interaction
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 px-4 gradient-overlay">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-2 text-primary">
+                   Benefits of Home Support
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto leading-tight">
+                    Discover how our services enhance your quality of life and independence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center animate-slide-up delay-100">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-3 text-primary">Stay Independent</h3>
+                    <p class="text-base leading-relaxed">Maintain your independence while receiving the support you need to live comfortably in your own home.</p>
+                </div>
+                
+                <div class="text-center animate-slide-up delay-200">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-3 text-primary">Reduce Stress</h3>
+                    <p class="text-base leading-relaxed">Eliminate the worry and physical strain of household tasks, allowing you to focus on enjoying life.</p>
+                </div>
+                
+                <div class="text-center animate-slide-up delay-300">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-3 text-primary">Family Peace of Mind</h3>
+                    <p class="text-base leading-relaxed">Provide your loved ones with reassurance knowing you have professional support and regular check-ins.</p>
+                </div>
+                
+                <div class="text-center animate-slide-up delay-400">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-3 text-primary">Enhanced Wellbeing</h3>
+                    <p class="text-base leading-relaxed">Experience improved mental and physical health through a clean, organized environment and social connection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 px-4 bg-[#1c2527] text-white">
+        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+            <h2 class="font-heading text-2xl md:text-3xl font-bold mb-6">
+           Experience Professional Home Support?
+            </h2>
+            <p class="text-xl mb-8 leading-relaxed opacity-90">
+                Let us help you maintain the comfort, safety, and independence you deserve in your own home. Contact us today for a personalized consultation and discover how our services can enhance your quality of life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" target="_blank" class="bg-accent hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center pulse-button">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    Call Now
+                </a>
+                <a href="mailto:info@cinderhealthcare.co.uk" target="_blank" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    Send Email
+                </a>
+            </div>
+            <p class="mt-6 text-sm opacity-75">
+                Available 24/7 for consultations and emergency support
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-primary text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -351,5 +503,6 @@
             }
         });
     </script>
+    <script src="/scripts/homecare.js"></script>
 </body>
 </html>
