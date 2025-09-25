@@ -39,3 +39,30 @@
         /* Hover effects */
         .service-card:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
         .cta-button:hover { transform: scale(1.05); transition: transform 0.2s ease; }
+
+            .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(55, 69, 72, 0.15);
+        }
+        
+        .pulse-accent {
+            animation: pulseAccent 2s infinite;
+        }
+        
+        @keyframes pulseAccent {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(226, 76, 43, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(226, 76, 43, 0); }
+        }
